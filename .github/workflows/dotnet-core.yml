@@ -19,8 +19,6 @@ jobs:
         dotnet-version: 3.1.101
     - name: Acessando MsPro.API
       run: cd .\API\MsPro.API\
-    - name: Instalando dependências
-      run: dotnet restore
     - name: Build
       run: dotnet build --configuration Release --no-restore
     - name: Acessando API.v14
