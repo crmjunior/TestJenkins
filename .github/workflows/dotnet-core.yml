@@ -22,4 +22,5 @@ jobs:
     - name: Build
       run: dotnet build ./API/MsPro.API/MsPro.API.csproj --configuration Release --no-restore
     - name: Test
-      run: dotnet test ./API/API.v1/MedCore_DataAccessTests/MedCore_DataAccessTests.csproj --no-restore --verbosity normal
+      run: dotnet test ./API/API.v1/MedCore_DataAccessTests/MedCore_DataAccessTests.csproj --no-restore --logger "console;verbosity=detailed"
+      
