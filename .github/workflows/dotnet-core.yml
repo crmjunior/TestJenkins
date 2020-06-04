@@ -17,9 +17,13 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 3.1.101
+    - name: Acessando MsPro.API
+      run: cd .\API\MsPro.API\
     - name: Instalando dependências
-      run: dotnet restore .\API\MsPro.API\MsPro.API.csproj
+      run: dotnet restore
     - name: Build
-      run: dotnet build .\API\MsPro.API\MsPro.API.csproj --configuration Release --no-restore
+      run: dotnet build --configuration Release --no-restore
+    - name: Acessando API.v14
+      run: cd ..\API.v1\ 
     - name: Test
-      run: dotnet test .\API\API.v1\MedCore_DataAccessTests\MedCore_DataAccessTests.csproj --no-restore --verbosity normal
+      run: dotnet test --no-restore --verbosity normal
