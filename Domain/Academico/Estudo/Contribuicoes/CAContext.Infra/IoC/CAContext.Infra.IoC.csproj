@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\CAContext.Domain\CAContext.Domain.csproj" />
+    <ProjectReference Include="..\Data\CAContext.Infra.Data.csproj" />
+    <ProjectReference Include="..\..\CAContext.Application\CAContext.Application.csproj" />
+    <ProjectReference Include="..\..\..\..\..\Shared\Shared.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
