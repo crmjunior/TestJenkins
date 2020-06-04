@@ -18,10 +18,10 @@ jobs:
       with:
         dotnet-version: 3.1.101
     - name: Acessando MsPro.API
-      run: cd .\API\MsPro.API\
+      run: cd ./API/MsPro.API/
     - name: Build
       run: dotnet build --configuration Release --no-restore
     - name: Acessando API.v14
-      run: cd ..\API.v1\ 
+      run: cd ../API.v1/ 
     - name: Test
       run: dotnet test --no-restore --verbosity normal
