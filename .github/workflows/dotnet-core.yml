@@ -22,5 +22,5 @@ jobs:
     - name: Build
       run: dotnet build ./API/MsPro.API/MsPro.API.csproj --configuration Release --no-restore
     - name: Test
-      run: dotnet test ./API/API.v1/MedCore_DataAccessTests/MedCore_DataAccessTests.csproj --configuration Release
+      run: dotnet test ./API/API.v1/MedCore_DataAccessTests/MedCore_DataAccessTests.csproj --configuration Release --logger "console;verbosity=detailed"
       
