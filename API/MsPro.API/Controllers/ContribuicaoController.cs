@@ -8,6 +8,10 @@ using Shared;
 namespace CAContext.API.Controllers
 {
     [ApiController]
+
+
+
+    
     public class ContribuicaoController : ApiController
     {
         private readonly IContribuicaoAppService _contribuicaoService;
