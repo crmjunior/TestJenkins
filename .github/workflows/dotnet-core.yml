@@ -17,8 +17,8 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 3.1.101
-    - name: Install dependencies
-      run: dotnet restore
+    - name: Instalando dependências
+      run: dotnet restore .\API\MsPro.API\MsPro.API.csproj
     - name: Build
       run: dotnet build .\API\MsPro.API\MsPro.API.csproj --configuration Release --no-restore
     - name: Test
