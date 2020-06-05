@@ -109,7 +109,7 @@ namespace MedCore_DataAccessTests
 
             var business = new ContribuicaoBusiness(contribuicaoMock, contribuicaoArquivoMock);
             var result = business.InserirContribuicao(contribuicao);
-            Assert.AreEqual(result, 1);
+            Assert.AreEqual(result,1);
         }
 
         [TestMethod]
